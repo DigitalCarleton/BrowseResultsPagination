@@ -1,18 +1,20 @@
 <?php
 /**
- * CollectionsBrowseResults
+ * BrowseResultsPagination
  * 
  * @copyright Copyright 2018 Eric C. Weig 
  * @license http://opensource.org/licenses/MIT MIT
+ *
+ * Modified by Digital Carleton 2022
  */
 
 /**
- * The CollectionsBrowseResults plugin.
+ * The BrowseResultsPagination plugin.
  * 
- * @package Omeka\Plugins\CollectionsBrowseResults
+ * @package Omeka\Plugins\BrowseResultsPagination
  */
 
-class CollectionsBrowseResultsPlugin extends Omeka_Plugin_AbstractPlugin
+class BrowseResultsPaginationPlugin extends Omeka_Plugin_AbstractPlugin
     {
 
 protected $_filters = array(
