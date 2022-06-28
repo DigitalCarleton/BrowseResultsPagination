@@ -19,6 +19,7 @@ class BrowseResultsPaginationPlugin extends Omeka_Plugin_AbstractPlugin
 
 protected $_filters = array(
     'collections_browse_per_page',
+    'items_browse_per_page',
 );
 
 public function filterCollectionsBrowsePerPage($perPage, $args)
@@ -27,4 +28,10 @@ public function filterCollectionsBrowsePerPage($perPage, $args)
     return $totalrecs;
 }
 
+public function filterItemsBrowsePerPage($perPage, $args) 
+{
+    $totalrecs = total_records('Items');
+    return $totalrecs;
+}    
+    
 }
